@@ -8,6 +8,7 @@ public class node {
 
     public void main(double val) {
         mod = val;
+        connections = [];
         in();
     }
 
