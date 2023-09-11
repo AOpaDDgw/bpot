@@ -1,8 +1,21 @@
 public class node {
 
-    public int value;
+    public double mod;
 
-    public void main(int val) {
-        value = val;
+    public double value;
+
+    public node[] connections; // these will be the connected (input) nodes
+
+    public void main(double val) {
+        mod = val;
+        in();
+    }
+
+    public void in() {
+        int sum = 0;
+        for (int i = 0; i < connections.length; i++) {
+            sum += connections[i].value;
+        }
+        value = sum * mod;
     }
 }
