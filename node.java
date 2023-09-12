@@ -6,9 +6,9 @@ public class node {
 
     public node[] connections; // these will be the connected (input) nodes
 
-    public void main(double val) {
+    public void main(double val, int height) {
         mod = val;
-        connections = [];
+        connections = new node[height];
         in();
     }
 
