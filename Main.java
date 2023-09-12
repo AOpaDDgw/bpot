@@ -1,3 +1,5 @@
+// javac -d ./compile *.java
+
 public class Main {
 
   static int width = 5;
