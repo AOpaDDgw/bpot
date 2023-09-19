@@ -4,19 +4,13 @@ public class node {
 
     public double value;
 
-    public node[] connections; // these will be the connected (input) nodes
+    public int[] connections; // these will be the indexes of the connected (input) nodes
 
-    public void main(double val, int height) {
-        mod = val;
-        connections = new node[height];
-        in();
+    public static void main(double val, int height) {
+        
     }
 
     public void in() {
-        int sum = 0;
-        for (int i = 0; i < connections.length; i++) {
-            sum += connections[i].value;
-        }
-        value = sum * mod;
+        
     }
 }
